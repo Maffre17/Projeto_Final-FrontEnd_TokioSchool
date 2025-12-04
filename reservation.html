@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <title>Takumi Bistrô | Reservas</title>
+    <link rel="icon" href="./assets/img/logotipo-branco.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <section class="banner__reservation">
+        <header class="banner__header">
+            <img class="header__img" src="./assets/img/logotipo-branco.png" alt="Logotipo do Takumi Bistrô">
+            <button id="header__button" class="header__button"><img id="button-img" class="header__icon"
+                    src="./assets/img/botao-menu-preto.png" alt="Botão para abrir o menu de navegação"></button>
+            <nav id="header__nav" class="header__nav">
+                <button id="nav__button" class="nav__button">
+                    <img class="nav__icon" src="assets/img/fechar-icon.png" alt="Botão para fechar a menu de navegação">
+                </button>
+                <a href="./index.html"><img class="nav__img" src="./assets/img/logotipo-preto.png" alt="Logotipo"></a>
+                <ul class="header__list">
+                    <li class="header__item"><a class="header__link" href="index.html">Pagina Inicial</a></li>
+                    <li class="header__item"><a class="header__link" href="specialties.html">Especialidades</a></li>
+                    <li class="header__item"><a class="header__link" href="groups.html">Menu de grupos</a></li>
+                    <li class="header__item"><a class="header__link" href="./assets/img/menu.pdf">Menu</a></li>
+                    
+                </ul>
+            </nav>
+        </header>
+        <h1 class="banner__title banner__title-reservation">Reservas</h1>
+    </section>
+    <main class="reservation">
+        <form id="reservation__form" class="reservation__form">
+            <div class="form__div-date">
+                <label class="form__label" for="time">Horario</label>
+                <input class="form__div-input" type="time" name="time" id="time" min="18:00" max="00:00" required>
+                <label class="form__label" for="date">Data</label>
+                <input class="form__div-input" type="date" name="date" id="date" required>
+            </div>
+            <label class="form__label" for="name">Nome</label>
+            <input class="form__input" type="text" name="name" id="name" required>
+            <label class="form__label" for="email">Email</label>
+            <input class="form__input" type="email" name="email" id="email" required>
+            <label class="form__label" for="pessoas">Nº de Pessoas</label>
+            <div class="form__div">
+                <button type="button" class="form__div-button" id="menos">−</button>
+                <input type="number" class="form__div-input-number" id="pessoas" min="1" max="40" value="1">
+                <button type="button" class="form__div-button" id="mais">+</button>
+            </div>
+
+            <button class="form__button" type="submit">Reservar</button>
+        </form>
+        <div class="form__popup" id="popup">Reserva realizada com sucesso! <br>
+            contactaremos por email</div>
+    </main>
+    <footer class="footer">
+        <img class="footer__img" src="./assets/img/logotipo-branco.png" alt="Logotipo">
+        <ul class="footer__list">
+            <li class="footer__item"><a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><img
+                        src="./assets/img/instagram.png" alt="instagram" class="footer__icon"></a></li>
+            <li class="footer__item"><a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><img
+                        src="./assets/img/facebook.png" alt="facebook" class="footer__icon"></a></li>
+            <li class="footer__item"><a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"><img
+                        src="
+                    ./assets/img/linkedin.png" alt="linkedin" class="footer__icon"></a></li>
+        </ul>
+    </footer>
+    <script src="./assets/js/menu_hamburger.js"></script>
+    <script src="./assets/js/reservation.js"></script>
+</body>
+
+</html>
