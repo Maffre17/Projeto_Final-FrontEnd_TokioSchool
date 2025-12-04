@@ -1,0 +1,359 @@
+ /*------ BANNER ------*/
+ .banner {
+     position: relative;
+     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../img/background-banner.jpg);
+
+ }
+
+
+
+ /*------ WELCOME ------*/
+ .welcome {
+     display: flex;
+     justify-content: center;
+     padding: 4rem;
+ }
+
+ .welcome__div {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin: 6rem 2rem;
+
+ }
+
+ .welcome__title {
+     color: var(--black);
+     font-weight: 600;
+     font-size: 1.2rem;
+     text-align: start;
+ }
+
+ .welcome__img {
+     width: 80%;
+     margin: 2rem 0 4rem 0;
+ }
+
+ .welcome__text {
+     text-align: center;
+     font-size: 1rem;
+     line-height: 2rem;
+ }
+
+ .gallery {
+     display: none;
+
+ }
+
+
+ /*------ SPECIALTIES ------*/
+ .specialties {
+     position: relative;
+     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../img/polvo-textura.jpg);
+     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+     background-size: cover;
+     background-position: center;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+
+ .specialties__title {
+     color: #fff;
+     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+     font-weight: 700;
+     font-size: 2rem;
+     text-align: center;
+     margin: 6rem 2rem 3rem 2rem;
+ }
+
+ .specialties__card {
+     display: flex;
+     flex-direction: column;
+     padding: .8rem;
+     align-items: center;
+     background-color: #fff;
+     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+     margin-bottom: 5rem;
+ }
+
+ .specialties__card-img {
+     width: 13rem;
+ }
+
+ .specialties__icon {
+     width: 3.5rem;
+     margin-bottom: 5rem;
+ }
+
+ .specialties__list {
+     display: none;
+ }
+
+ .specialties__anchor {
+     display: none;
+ }
+
+ /*------ OUR-SERVICES ------*/
+ .our-service__cards {
+     padding: 4rem 0;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .our-services__title,
+ .localization__title {
+     color: var(--black);
+     font-weight: 600;
+     font-size: 1.4rem;
+     padding: 2rem;
+     text-align: start;
+ }
+
+ .our-services__card {
+     margin: 2rem 0;
+     display: flex;
+     align-self: center;
+     background-color: #fff;
+     width: 80%;
+     flex-direction: column;
+     box-shadow:
+         0 0 5px rgba(0, 0, 0, 0.1),
+         0 4px 5px rgba(0, 0, 0, 0.15);
+     transition: box-shadow 0.3s ease;
+     border-radius: 3rem 0 1.5rem 1.5rem;
+ }
+
+ .our-services__card-img {
+     width: 100%;
+     height: 15rem;
+     object-fit: cover;
+     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+     border-radius: 3rem 0 2rem 0;
+ }
+
+ .our-services__card-title {
+     font-weight: 600;
+     margin: 2rem;
+ }
+
+ .our-services__card-text {
+     text-indent: 1em;
+     text-align: justify;
+     margin: 0 1.5rem .8rem 1.5rem;
+     line-height: 2rem;
+ }
+
+ .localization__title {
+     text-align: center;
+     margin-bottom: 1rem;
+ }
+
+ @media screen and (min-width: 768px) {
+     .welcome__img {
+         width: 40%;
+         margin: 2rem 0 4rem 0;
+     }
+
+     .welcome__text {
+         text-align: justify;
+         font-size: 1rem;
+         line-height: 2rem;
+         padding: 0 10rem;
+     }
+
+     .specialties__card-img {
+         width: 20rem;
+         height: auto;
+     }
+
+
+     .our-services__card {
+         width: 70%;
+     }
+
+ }
+
+ @media screen and (min-width: 1024px) {
+
+     .banner::before,
+     .specialties::before {
+         content: "";
+         position: absolute;
+         inset: 0;
+         background: rgba(0, 0, 0, 0.75);
+         z-index: 1;
+     }
+
+     .banner *,
+     .specialties * {
+         position: relative;
+         z-index: 2;
+     }
+
+     .welcome {
+         flex-direction: row;
+         align-items: center;
+         justify-content: space-around;
+         
+     }
+
+
+     .welcome__div {
+         width: 50%;
+         margin: 0;
+     }
+
+     .welcome__img {
+         width: 60%;
+
+     }
+
+     .welcome__text {
+         padding: 0 4rem;
+     }
+
+     .gallery {
+         display: block;
+         width: 50%;
+         column-count: 3;
+         column-gap: 1rem;
+     }
+
+     .gallery-image {
+         width: 100%;
+         margin-bottom: 1rem;
+         border-radius: 1.5rem;
+         display: block;
+         object-fit: cover;
+     }
+
+     .specialties {
+         box-shadow: none;
+         padding: 2rem;
+         
+
+
+     }
+
+     .specialties__title {
+         text-align: center;
+         margin: 4rem 2rem 6rem 2rem;
+
+
+     }
+
+     .specialties__card {
+         display: none;
+     }
+
+     .specialties__list {
+         display: flex;
+         align-items: baseline;
+         justify-content: space-between;
+         margin-bottom: 2rem;
+
+     }
+
+     .specialties__item-img {
+         width: 60%;
+         display: flex;
+         backdrop-filter: blur(5px);
+         border-radius: 100%;
+         justify-self: center;
+         max-width: 800px;
+         box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+         transition: all 0.5s ease;
+
+     }
+
+     .specialties__item-img:hover {
+         transform: scale(1.1);
+     }
+
+     .specialties__button {
+         display: none;
+     }
+
+     .specialties__item {
+
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+
+     }
+
+     .specialties__item-title {
+         color: #fff;
+         text-align: center;
+         font-size: 1.2rem;
+         font-weight: 600;
+         margin: 2rem;
+     }
+
+     .specialties__anchor {
+         text-decoration: none;
+         color: #fff;
+         font-weight: 700;
+         font-size: 1.3rem;
+         display: block;
+         width: 25%;
+         border-radius: 3rem;
+         padding: 1rem;
+         text-align: center;
+         background: rgba(255, 255, 255, 0.2);
+         margin: 0;
+         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+         box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+         transition: all 0.5s ease;
+         margin: 2rem;
+     }
+
+     .specialties__anchor:hover {
+         background: linear-gradient(90deg, #FF512F, #ff7b00);
+         transform: scale(1.03);
+         filter: brightness(1.1);
+     }
+
+     .our-services__title {
+         padding: 4rem;
+     }
+
+     .our-service__cards {
+         padding: 0 4rem;
+         display: flex;
+         flex-direction: row;
+         justify-content: space-around;
+
+
+     }
+
+     .our-services__card {
+         margin: 0;
+         padding: 0;
+         width: 30%;
+         align-self: self-start;
+     }
+
+     .localization {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+     }
+
+     .localization__title {
+         margin: 3rem 2rem 2rem 2rem;
+     }
+
+     .localization__map {
+         width: 80%;
+         margin-bottom: 3rem;
+
+     }
+     .footer-index{
+        background-image: url('../../img/background-banner.jpg');
+     }
+    
+ }

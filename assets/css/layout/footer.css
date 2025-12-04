@@ -1,0 +1,47 @@
+.footer {
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.footer__img {
+    width: 120px;
+    margin: 1rem;
+}
+
+.footer__list {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem 1rem;
+}
+
+.footer__icon {
+    width: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+
+    .footer {
+        position: relative;
+        
+        background-size: cover;
+        background-position: bottom;
+    }
+
+    .footer::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.75);
+        z-index: 1;
+    }
+
+    .footer * {
+        position: relative;
+        z-index: 2;
+    }
+
+}

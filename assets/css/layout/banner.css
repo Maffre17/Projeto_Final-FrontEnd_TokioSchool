@@ -1,0 +1,124 @@
+.banner__especialties,
+.banner,
+.banner__group,
+.banner__reservation {
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.banner__title {
+    padding: 10rem 0 6rem 0;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-align: end;
+}
+
+.banner__title--span,
+.banner__especialties-title--span {
+    text-decoration: underline;
+    text-decoration-color: #ff7b00;
+    text-decoration-thickness: 7px;
+}
+
+.banner__title--span {
+    text-decoration-thickness: 7px;
+}
+
+.banner__especialties-title--span {
+
+    text-decoration-thickness: 5px;
+}
+
+.banner__button {
+    text-decoration: none;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(90deg, #FF512F, #ff7b00);
+    border-radius: 50px;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 1rem 2rem;
+    margin: 2rem 0;
+
+}
+
+.banner__arrow {
+    width: 2rem;
+}
+
+.banner__img {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .banner__title {
+        padding: 15rem 3rem 15rem 20rem;
+
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .banner {
+        padding: 2rem 0 0 0;
+    }
+   .banner__div-title-button{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: start;
+   }
+
+    .banner__title {
+        padding: 0 0 3rem 0;
+        text-align: start;
+    }
+
+    .banner__img {
+        width: 45%;
+
+    }
+
+    .banner__arrow {
+        display: none;
+    }
+
+    .banner__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .banner__div-title-button {
+        padding: 3rem 5rem;
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+    }
+
+    .banner__button {
+        width: 50%;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.2);
+        margin: 0;
+        transition: all 0.5s ease;
+    }
+
+    .banner__button:hover {
+        background: linear-gradient(90deg, #FF512F, #ff7b00);
+        transform: scale(1.03);
+        filter: brightness(1.1);
+    }
+
+    .banner__title--span {
+        text-decoration: none;
+    }
+
+}

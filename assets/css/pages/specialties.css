@@ -1,0 +1,67 @@
+.banner__especialties {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../img/background-banner-especialties.jpg);
+
+}
+
+.our-specialties {
+    padding: 6rem 0 0 0;
+}
+
+.our-specialties__item {
+    margin-bottom: 10rem;
+    display: flex;
+    width: 100%;
+
+    overflow: hidden;
+}
+
+.our-specialties__item-img {
+    width: 30%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+}
+
+.our-specialties__item-div {
+    padding: 3rem 2rem;
+}
+
+.our-specialties__item-title {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.our-specialties__item-text {
+    padding: 1rem 0;
+    font-size: 1rem;
+    line-height: 2rem;
+}
+
+.our-specialties__item-arrow {
+    width: 3rem;
+    color: #000;
+}
+
+@media screen and (min-width: 1024px) {
+    .banner__title-specialties {
+        margin: 4rem 0;
+    }
+    .banner__button-specialties{
+        display: none;
+    }
+
+    .our-specialties__item-button {
+        display: none;
+    }
+
+    .our-specialties__item-div {
+        margin: 4rem 4rem 4rem 2rem;
+    }
+
+    .our-specialties__item-img {
+        width: 40%;
+    }
+
+}

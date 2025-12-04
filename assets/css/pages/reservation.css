@@ -1,0 +1,140 @@
+.banner__reservation {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../img/background-reserva.jpg);
+}
+
+.reservation__form {
+    margin: 5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.form__div-date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.form__label {
+    font-weight: 600;
+    margin: 1rem 0 0 0;
+    text-align: start;
+}
+
+.form__input {
+    padding: 1rem;
+    width: 80%;
+}
+
+.form__div-input {
+    padding: 1rem;
+    width: 80%;
+}
+
+.form__input,
+.form__div-input {
+    margin: 1rem;
+    font-size: 1rem;
+    font-family: "Alan Sans", sans-serif;
+    border: none;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 3rem;
+}
+
+.form__div {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.form__div-button {
+    border: none;
+    background-color: transparent;
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+
+.form__div-input-number {
+    font-size: 1.5rem;
+    border: none;
+    text-align: center;
+    padding: 1rem;
+    font-family: "Alan Sans", sans-serif;
+    border-radius: 3rem;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.form__button {
+    border: none;
+    background: linear-gradient(90deg, #FF512F, #ff7b00);
+    margin-top: 2rem;
+    font-family: "Alan Sans", sans-serif;
+    color: #fff;
+    font-size: 1.3rem;
+    padding: 1rem;
+    border-radius: 3rem;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    align-self: center;
+}
+
+.form__popup {
+    position: fixed;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #4CAF50;
+    color: #fff;
+    font-family: "Alan Sans", sans-serif;
+    font-size: 1.1rem;
+    width: 80%;
+    padding: 15px 25px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    z-index: 1000;
+    transition: top 0.5s ease, opacity 0.5s ease;
+    font-family: sans-serif;
+}
+
+.form__popup.show {
+    top: 30px;
+    opacity: 1;
+    font-family: "Alan Sans", sans-serif;
+    font-size: 1.1rem;
+}
+
+@media screen and (min-width: 768px) {
+    .reservation__form {
+        margin: 5rem;
+        align-items: center;
+    }
+
+    .form__div-date {
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: space-between;
+        width: 70%;
+    }
+
+    .form__input {
+        width: 60%;
+    }
+
+    .form__button {
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .banner__title-reservation {
+        margin: 4rem 0;
+    }
+    .form__popup{
+        width: 50%;
+    }
+}
