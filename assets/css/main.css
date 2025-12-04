@@ -1,0 +1,24 @@
+/*------ BASE ------*/
+@import url('/assets/css/base/reset.css');
+
+
+
+/*------ LAYOUTS ------*/
+@import url('/assets/css/layout/header.css');
+@import url('/assets/css/layout/banner.css');
+@import url('/assets/css/layout/footer.css');
+
+/*------ PAGES ------*/
+@import url('/assets/css/pages/index.css');
+@import url('/assets/css/pages/specialties.css');
+@import url('/assets/css/pages/groups.css');
+@import url('/assets/css/pages/reservation.css');
+
+body {
+    font-family: "Alan Sans", sans-serif;
+    background-color: #fff;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
